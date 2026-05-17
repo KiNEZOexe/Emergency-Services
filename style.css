@@ -1,0 +1,106 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #9861ce 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+.container {
+  border-radius: 10px;
+  justify-self: center;
+  height: fit-content;
+  width: clamp(300px, 50vw, 60vw);
+  grid-template-rows: 0.05fr 0.5fr max-content;
+  background-color: aliceblue;
+  display: grid;
+  gap: 5px;
+}
+.ProcessBox {
+  justify-self: center;
+  width: clamp(300px, 50vw, 60vw);
+  color: #ffffff;
+  margin: none;
+}
+.ProcessList {
+  list-style-type: none;
+  text-justify: inter-word;
+  margin-left: none;
+  margin-bottom: 5vw;
+}
+h1,
+p {
+  justify-self: center;
+  font-size: clamp(2vw, 3vw, 5vw);
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.info {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.infobox,
+.buttons {
+  width: inherit;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+#locate {
+  border-radius: 5px;
+  border: none;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: none;
+  background-color: #d2e6f1;
+  width: clamp(20vw, 30vw, 50vw);
+  height: 20px;
+}
+#map {
+  margin: none;
+  border: none;
+  grid-row: 3;
+  width: auto;
+  aspect-ratio: 1/0.5;
+}
+#serviceList {
+  margin: none;
+  padding: 0;
+}
+#serviceList li {
+  list-style-position: inside;
+  grid-row: 2;
+  font-size: clamp(10px, 1vw, 16px);
+  border-radius: 5px;
+  border-left: 4px solid #f3805d;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: rgb(255, 233, 208);
+  padding: 6px;
+  margin: none;
+  margin-bottom: 3px;
+}
+#serviceList li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(255, 140, 66, 0.3);
+}
+button {
+  width: clamp(10vw, 20vw, 30vw);
+  font-size: clamp(2vw, 2.5vw, 3vw);
+  border: none;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #667eea 0%, #c03434 100%);
+  border-radius: 5vh;
+}
+button:hover {
+  background: linear-gradient(135deg, #7e93f0 0%, #e76666 100%);
+}
+button:active {
+  background: linear-gradient(135deg, #4b5fb8 0%, #992525 100%);
+}
