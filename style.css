@@ -15,7 +15,15 @@ body {
   display: grid;
   gap: 5px;
 }
-
+.ProcessBox {
+  justify-self: center;
+  width: clamp(300px, 50vw, 60vw);
+  color: #ffffff;
+  margin: none;
+}
+#ProcessDialogue {
+  color: aliceblue;
+}
 h1,
 p {
   justify-self: center;
